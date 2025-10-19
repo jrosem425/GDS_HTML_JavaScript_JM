@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Week 2 | Javascript</title>
+</head>
+
+<!-- Comment in HTML (ctrl /) -->
+
+
+<body>
+
+    <div id="jsExample">
+
+
+
+    </div>
+
+
+    
+    <script>
+
+
+
+        //comment in javaScript
+        console.log("Hello World")
+
+        var test = 10;
+
+
+        //if satement
+
+        var a = 11
+        var b = 10
+
+        if(a == b){
+        console.log("A = B")
+
+        }else{
+            console.log("A does not equal B :C")
+        } 
+
+
+        if(a>10){
+            console.log("A is greater than 10")
+        }
+
+        // if I want to compare a string
+
+        var compareString = "text"
+
+        if(compareString == "text"){
+            console.log("A joke")
+        }else{
+            console.log("Not a joke")
+        }
+
+
+
+        var a = 10;
+        var b = 25;
+        //addition
+        console.log(a+b)
+        //subtraction
+        console.log(a-b)
+        //multiplication
+        console.log(a*b)
+
+
+        //adding strings
+        console.log("test1"+"test2")
+
+        //cannot subtract strings
+
+
+
+    
+         //Manipulating HTML document
+
+        var divContainer = document.getElementById("jsExample")
+        //document is the HTML file that loaded it
+
+        //innerHTML - gets the stuff between the open and close tags
+
+
+        // SETTING the inner HTML
+        divContainer.innerHTML = "<h1>Hello!</h1>"
+
+        //ADDING ONTO the inner html
+        divContainer.innerHTML += "<h2>Adding</h2>"
+
+
+        //functions - reusable block of code
+
+
+        var hello = 2;
+
+        //parameters - something a function can use - pass data around
+
+        //function with a parameter
+
+        function alertMessage(messageToAlert)
+        {
+            //calling another function inside another function
+            addNumbers(10,26)
+
+            //sending out an alert
+            alert(messageToAlert)
+        }
+        
+        
+
+        //function with two parameters
+        function alertMessageTwo(paramOne, paramTwo)
+        {
+            alert(paramOne+paramTwo)
+        }
+
+        alertMessage("hello");
+        alertMessageTwo("hello", "hello two")
+
+        //this function is called in another function (alertMessage)
+        function addNumbers(numberOne, numberTwo)
+        {
+            console.log(numberOne + numberTwo)
+        }
+
+    </script>
+
+</body>
+</html>

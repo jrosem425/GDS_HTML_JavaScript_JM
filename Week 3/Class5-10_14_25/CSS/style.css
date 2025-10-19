@@ -1,0 +1,163 @@
+body{
+    background-color: black;
+    padding: 30px;
+}
+
+#bg{
+    background-color: aqua;
+    /* Creating a border */
+    border: 3px solid white;
+    /* aligning everything in it to the center */
+    text-align: center;
+    /* setting the padding so everything is 25 px from the sides */
+    padding:25px;
+
+}
+#wrapper{
+    margin: auto;
+    /* Setting the width */
+    width: 500px;
+    border:2px solid white;
+    padding:10px
+}
+
+
+#header{
+    /* creating a border */
+    border: 4px solid salmon;
+    /* setting the minimum height this box can have */
+    min-height: 100px;
+    /* padding:25px; */
+}
+
+#hello{
+    /* changed the font size */
+    font-size: 55px;
+    /* set the color */
+    color:maroon;
+    /* made sure its aligned to the center */
+    text-align:center;
+    /* gave it a text shadow
+    1st snf 2nd balue are cords
+    3rd vakue is blur
+    4th value is color */
+    text-shadow: 2px 2px 10px black;
+    line-height: 100px;
+}
+
+
+#nav-bar{
+    min-height: 50px;
+    margin: auto;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid brown;
+    animation: navBarAnimation 1s infinite alternate;
+
+}
+
+
+.buttonDesign{
+    width: 200px;
+    border: 2px solid green;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    box-shadow: 3px 5px 10px black;
+}
+
+#mainContent{
+    min-height: 500px;
+    min-width: 500px;
+}
+
+#wolfContainer{
+    margin: auto;
+    position: relative;
+    display: grid;
+    justify-items: center;
+}
+
+#wolfImage{
+    width: 25%;
+    box-shadow: 8px 8px 10px darkred;
+    animation-name: wolfRotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#wolfImage:hover{
+    width: 70%;
+}
+
+.wolfList{
+    color: darkmagenta;
+    padding: 10px;
+    text-align: center;
+    border: 2px dotted darkviolet;
+    margin-top: 5px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+/* .wolfList:hover{
+    width: 150%;
+  
+} */
+
+#wolfHeader{
+    /* one way to call an animation*/
+    animation-name: percentageTextAnimation;
+    /* how long it will play */
+    animation-duration: 3s;
+    /*how many times to play */
+    animation-iteration-count: infinite;
+    /* is this animation going to reverse at the end */
+    animation-direction: alternate;
+}
+
+@keyframes wolfRotate{
+    from{transform: scalex(0);}
+    to{transform: scaleX(1);}
+}
+
+@keyframes percentageTextAnimation{
+    0%{
+        color: black;
+        transform:translateX(0px)
+    }
+    25%{
+        color: yellowgreen;
+        transform:translateX(50px)
+    }
+    50%{
+        color: goldenrod;
+        transform:translateX(-50px)
+    }
+    100%{
+        color: darkgoldenrod;
+        transform:translateX(0px)
+    }
+
+}
+
+@keyframes textAnimation {
+    from{
+        color: black;
+    }
+    to{
+        color: brown;
+    }
+}
+
+@keyframes navBarAnimation {
+    from{
+        border: 2px solid brown
+    }
+    to{
+        border: 5px solid white
+    }
+}

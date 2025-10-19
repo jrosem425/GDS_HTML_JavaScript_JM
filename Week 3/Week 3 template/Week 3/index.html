@@ -45,7 +45,7 @@
 
                     <!-- SHAPES MUST GO INTO THIS DIV, ONCE DONE Shape Title can disappear -->
                     <div id="shapeContent">
-                        <canvas id="canvas" width="800" height="600" style="border: 1px solid"></canvas>
+                        <canvas id="canvas" width="800" height="800" style="border: 1px solid"></canvas>
                          <script>
                             var canvas = document.getElementById("canvas")
                             var ctx = canvas.getContext("2d")
@@ -57,14 +57,64 @@
                             ctx.strokeRect(85,302,100,100)
 
 
-                            ctx.fillStyle="#fff0"
+                            ctx.fillStyle="#fff00"
                             ctx.strokeStyle="red"
                             ctx.lineWidth="5px"
                             ctx.beginPath();
-                            ctx.arc(386,442,67,0,4*Math.PI/2,false)
-                            ctx.closePath()
-                            ctx.fill()
-                            ctx.stroke()
+                            ctx.arc(385,441,67,0,4*Math.PI/2,false)
+                            ctx.closePath();
+                            ctx.fill();
+                            ctx.stroke();
+
+                            
+                            ctx.fillStyle ="#ff00ff"
+                            ctx.strokeStyle="#00ffff"
+                            ctx.lineWidth="5px"
+                            ctx.beginPath()
+                            ctx.moveTo(557,308)
+                            ctx.lineTo(667,284)
+                            ctx.lineTo(725,380)
+                            ctx.lineTo(650,464)
+                            ctx.lineTo(548,420)
+
+                            ctx.closePath();
+                            ctx.fill();
+                            ctx.stroke();
+
+
+
+
+                            ctx.fillStyle ="#ffff00"
+                            ctx.strokeStyle="#rgb(32,32,32)"
+                            ctx.lineWidth="5px"
+                            ctx.beginPath()
+                            ctx.moveTo(635,496)
+                            ctx.lineTo(668,554)
+                            ctx.lineTo(733,567)
+                            ctx.lineTo(688,615)
+                            ctx.lineTo(696,681)
+                            ctx.lineTo(635,653)
+                            ctx.lineTo(575,681)
+                            ctx.lineTo(583,615)
+                            ctx.lineTo(538,567)
+                            ctx.lineTo(603,554)
+
+                            ctx.closePath();
+                            ctx.fill();
+                            ctx.stroke();
+
+
+                            ctx.strokeStyle = "rgb(255,0,0)"
+                            ctx.lineWidth="5px"
+                            ctx.beginPath()
+                            ctx.moveTo(85,682)
+                            ctx.lineTo(278,549)
+                            ctx.stroke();
+
+
+                            
+
+
 
 
                         </script>

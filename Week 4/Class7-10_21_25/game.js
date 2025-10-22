@@ -98,3 +98,11 @@ while(whileInt < 20* 4)
     whileInt++;
     console.log(whileInt)
 }
+
+//infinite while loop
+
+// var badpractice = "dont do this"
+// while(true)
+// {
+//     console.log(badpractice)
+// }
